@@ -58,6 +58,22 @@ Note: I found the other (hosted) LLMs to be MUCH more reliable for this use case
 
 ## Running the Application
 
+Initiate virtual environment and install dependencies:
+
+```bash
+python -m venv .venv; source .venv/bin/activate
+poetry install
+```
+
+
+### Start the API server:
+
+```bash
+poetry run uvicorn api.main:app --reload
+```
+Access the API at `/docs` to see the available endpoints.
+
+
 ### React UI
 Start the frontend:
 ```bash
